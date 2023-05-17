@@ -1,0 +1,48 @@
+@import "./styles/UI";
+
+/* Override default style and set padding and margin to nothing */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+}
+
+h1 {
+}
+
+/* Make all link text black with no text decoration */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* No styling on list items */
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+// /* Tablet screen */
+// @media (max-width: 768px) {
+//   html {
+//     font-size: 14px;
+//   }
+// }
+
+// /* Mobile screen */
+// @media (max-width: 580px) {
+//   html {
+//     font-size: 12px;
+//   }
+// }

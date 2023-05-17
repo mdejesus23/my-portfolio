@@ -1,0 +1,10 @@
+@import "../../../styles/UI";
+
+button {
+  background-color: $secondary-color;
+  font-weight: 700;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}

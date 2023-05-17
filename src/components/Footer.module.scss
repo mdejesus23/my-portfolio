@@ -1,0 +1,34 @@
+@import "../styles/UI";
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+
+  .socialMedia {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+
+    svg {
+      color: white;
+      margin: 20px;
+      font-size: 3rem;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    svg:hover {
+      color: $secondary-color;
+    }
+  }
+
+  p {
+    color: white;
+    text-align: center;
+  }
+}
