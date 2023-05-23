@@ -1,0 +1,162 @@
+@import "../styles/UI";
+
+@media (min-width: 1200px) {
+  .card {
+    background-color: $primary-color;
+    .projectContainer {
+      height: auto;
+      h2 {
+        margin-bottom: 0;
+        background-color: $primary-color;
+        color: white;
+        padding: 0.6rem 0;
+      }
+
+      .imageContainer {
+        width: 100%;
+        border-bottom: 2px solid $primary-color;
+
+        img {
+          height: 300px;
+          object-fit: contain;
+        }
+      }
+
+      .descContainer {
+        border: 2px solid $secondary-color;
+        width: 70%;
+        height: 180px;
+        border-radius: 10px;
+        margin: 5px auto;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        overflow-y: auto;
+
+        p {
+          color: white;
+          margin: 20px 5px;
+          text-align: center;
+        }
+      }
+
+      .control {
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        a {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .card {
+    background-color: $primary-color;
+    .projectContainer {
+      height: auto;
+      h2 {
+        margin-bottom: 0;
+        background-color: $primary-color;
+        color: white;
+        padding: 0.6rem 0;
+      }
+
+      .imageContainer {
+        width: 100%;
+        border-bottom: 2px solid $primary-color;
+
+        img {
+          height: 300px;
+          object-fit: contain;
+        }
+      }
+
+      .descContainer {
+        border: 2px solid $secondary-color;
+        width: 95%;
+        height: 180px;
+        border-radius: 10px;
+        margin: 5px auto;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        overflow-y: auto;
+
+        p {
+          color: white;
+          text-align: center;
+        }
+      }
+
+      .control {
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        a {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    background-color: $primary-color;
+    .projectContainer {
+      height: auto;
+      h2 {
+        margin-bottom: 0;
+        background-color: $primary-color;
+        color: white;
+        padding: 0.6rem 0;
+      }
+
+      .imageContainer {
+        width: 100%;
+        border-bottom: 2px solid $primary-color;
+
+        img {
+          width: 100%;
+          // height: 300px;
+          object-fit: contain;
+        }
+      }
+
+      .descContainer {
+        border: 2px solid $secondary-color;
+        width: 80%;
+        height: 180px;
+        border-radius: 10px;
+        margin: 5px auto;
+        display: flex;
+        align-items: center;
+        overflow-y: auto;
+
+        p {
+          color: white;
+          text-align: justify;
+        }
+      }
+
+      .control {
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        a {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

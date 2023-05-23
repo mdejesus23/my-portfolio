@@ -1,14 +1,26 @@
 import { NavLink } from "react-router-dom";
 
+import { motion } from "framer-motion";
+
 import classes from "./Navigation.module.scss";
 
 const Navigation = (props) => {
-  const toggleId = props.toggleNav ? classes.show : classes.hide;
+  const toggleClass = props.toggleNav ? classes.show : classes.hide;
 
   return (
-    <nav className={toggleId}>
+    <motion.nav
+      className={toggleClass}
+      initial={{ y: -500 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 0.5, type: "spring" }}
+    >
       <ul className={classes.links}>
-        <li>
+        <motion.li
+          whileHover={{
+            scale: 1.2,
+            color: "yellow",
+          }}
+        >
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -18,8 +30,13 @@ const Navigation = (props) => {
           >
             Home
           </NavLink>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          whileHover={{
+            scale: 1.2,
+            color: "yellow",
+          }}
+        >
           <NavLink
             to="Skills"
             className={({ isActive }) =>
@@ -28,8 +45,13 @@ const Navigation = (props) => {
           >
             Skills
           </NavLink>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          whileHover={{
+            scale: 1.2,
+            color: "yellow",
+          }}
+        >
           <NavLink
             to="Projects"
             className={({ isActive }) =>
@@ -38,8 +60,13 @@ const Navigation = (props) => {
           >
             Project
           </NavLink>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          whileHover={{
+            scale: 1.2,
+            color: "yellow",
+          }}
+        >
           <NavLink
             to="Contact"
             className={({ isActive }) =>
@@ -48,9 +75,9 @@ const Navigation = (props) => {
           >
             Contact
           </NavLink>
-        </li>
+        </motion.li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 
