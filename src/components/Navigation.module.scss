@@ -47,6 +47,22 @@ nav {
       align-items: center;
       justify-content: center;
     }
+
+    li {
+      margin: 20px;
+      font-size: 1.5rem;
+      padding: 5px;
+      border-radius: 20px;
+
+      a {
+        transition: color 0.3s;
+      }
+
+      & a:hover,
+      & a.active {
+        color: $secondary-color;
+      }
+    }
   }
 
   .show {

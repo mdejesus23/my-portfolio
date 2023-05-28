@@ -18,8 +18,6 @@ const Header = () => {
     setShowNavLinks((prev) => !prev);
   };
 
-  console.log(showNavLinks);
-
   return (
     <header>
       <Navigation toggleNav={showNavLinks} />

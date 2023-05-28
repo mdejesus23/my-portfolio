@@ -1,53 +1,7 @@
-import classes from "./Home.module.scss";
-import profilePic from "../assets/profile-pic.jpg";
-import profilePic2 from "../assets/melnard.jpg";
-import Button from "../components/UI/Button/Button";
-
-import { motion } from "framer-motion";
-
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import About from "../components/about";
 
 const HomePage = () => {
-  return (
-    <div className={classes.home}>
-      <motion.div
-        className={classes.grid}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-      >
-        <div className={classes.gridItem1}>
-          <h2>
-            Hi, My Name is <span>Melnard</span>
-          </h2>
-          <div className={classes.prompt}>
-            <p>
-              A junior front-end developer with an insatiable thirst for
-              knowledge and a deep passion for creating remarkable web
-              experiences,
-            </p>
-            <div className={classes.icons}>
-              <a
-                href="https://github.com/mdejesus23"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHubIcon />
-              </a>
-              <LinkedInIcon />
-              <Button>Download CV</Button>
-            </div>
-          </div>
-        </div>
-        <div className={classes.gridItem2}>
-          <div className={classes.clip}>
-            <img src={profilePic2} alt="profile" />
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  );
+  return <About />;
 };
 
 export default HomePage;
