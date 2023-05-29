@@ -1,4 +1,4 @@
-import { createHashRouter, HashRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/Home";
@@ -22,11 +22,7 @@ const router = createHashRouter([
 ]);
 
 function App() {
-  return (
-    <HashRouter>
-      <RouterProvider router={router} />
-    </HashRouter>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
