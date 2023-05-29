@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, HashRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/Home";
@@ -7,7 +7,7 @@ import ProjectsPage from "./pages/Project";
 import ContactPage from "./pages/Contact";
 import ErrorPage from "./pages/Error";
 
-const routes = [
+const router = createHashRouter([
   {
     path: "/",
     element: <RootLayout />,
@@ -19,50 +19,17 @@ const routes = [
       { path: "Contact", element: <ContactPage /> },
     ],
   },
-];
-
-const router = createBrowserRouter({
-  routes,
-  basename: process.env.PUBLIC_URL,
-});
+]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <HashRouter>
+      <RouterProvider router={router} />
+    </HashRouter>
+  );
 }
 
 export default App;
-
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-// import RootLayout from "./pages/Root";
-// import HomePage from "./pages/Home";
-// import SkillsPage from "./pages/Skills";
-// import ProjectsPage from "./pages/Project";
-// import ContactPage from "./pages/Contact";
-// import ErrorPage from "./pages/Error";
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <RootLayout />,
-//     errorElement: <ErrorPage />,
-//     children: [
-//       { index: true, element: <HomePage /> },
-//       { path: "Skills", element: <SkillsPage /> },
-//       {
-//         path: "Projects",
-//         element: <ProjectsPage />,
-//       },
-//       { path: "Contact", element: <ContactPage /> },
-//     ],
-//   },
-// ]);
-
-// function App() {
-//   return <RouterProvider router={router} />;
-// }
-
-// export default App;
 
 // loader: async () => {
 //   const response = await fetch(
