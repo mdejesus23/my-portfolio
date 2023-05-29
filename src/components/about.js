@@ -42,7 +42,10 @@ const About = () => {
                 <LinkedInIcon />
               </a>
 
-              <a href="/pdfs/resume.pdf" download>
+              <a
+                href="https://drive.google.com/file/d/11Q_fqLTA7T291m9srtTAIYHtO3_BOK33/view?usp=sharing"
+                download
+              >
                 <Button>Download CV</Button>
               </a>
             </div>
