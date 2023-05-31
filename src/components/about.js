@@ -45,6 +45,8 @@ const About = () => {
               <a
                 href="https://drive.google.com/file/d/11Q_fqLTA7T291m9srtTAIYHtO3_BOK33/view?usp=sharing"
                 download
+                target="_blank"
+                rel="noreferrer"
               >
                 <Button>Download CV</Button>
               </a>
