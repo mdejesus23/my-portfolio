@@ -21,7 +21,7 @@
 
       .gridItem1 {
         h2 {
-          font-size: 3.5rem;
+          font-size: 2.5rem;
           margin-bottom: 17px;
         }
         span {
@@ -30,88 +30,7 @@
 
         .prompt {
           p {
-            font-size: 1.2rem;
-            margin-bottom: 55px;
-          }
-
-          .icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            a {
-              svg {
-                font-size: 3rem;
-                margin: 0 8px;
-                transition: color 0.3s;
-                cursor: pointer;
-
-                &:hover {
-                  color: $secondary-color;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .gridItem2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .clip {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 24rem;
-          width: 30rem;
-          background-color: $secondary-color;
-          clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-
-          img {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            margin: auto;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .home {
-    background-color: $primary-color;
-    height: calc(100vh - 100px);
-
-    .grid {
-      width: 70%;
-      margin: 0 auto;
-      height: calc(100vh - 100px);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-color: $primary-color;
-      color: white;
-      padding: 15px;
-
-      .gridItem1 {
-        h2 {
-          font-size: 3rem;
-          margin-bottom: 17px;
-        }
-        span {
-          color: $secondary-color;
-        }
-
-        .prompt {
-          p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-bottom: 55px;
           }
 
@@ -146,13 +65,94 @@
           justify-content: center;
           align-items: center;
           height: 20rem;
-          width: 23rem;
+          width: 25rem;
           background-color: $secondary-color;
           clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
 
           img {
-            width: 240px;
-            height: 240px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+    background-color: $primary-color;
+    height: calc(100vh - 100px);
+
+    .grid {
+      width: 70%;
+      margin: 0 auto;
+      height: calc(100vh - 100px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: $primary-color;
+      color: white;
+      padding: 15px;
+
+      .gridItem1 {
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 17px;
+        }
+        span {
+          color: $secondary-color;
+        }
+
+        .prompt {
+          p {
+            font-size: 1rem;
+            margin-bottom: 55px;
+          }
+
+          .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+              svg {
+                font-size: 3rem;
+                margin: 0 8px;
+                transition: color 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                  color: $secondary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .gridItem2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .clip {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 17rem;
+          width: 21rem;
+          background-color: $secondary-color;
+          clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+
+          img {
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             margin: auto;
           }
@@ -181,7 +181,7 @@
 
       .gridItem1 {
         h2 {
-          font-size: 2.8rem;
+          font-size: 2rem;
         }
         span {
           color: $secondary-color;
@@ -189,7 +189,7 @@
 
         .prompt {
           p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-bottom: 25px;
           }
 
@@ -228,8 +228,8 @@
           clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
 
           img {
-            width: 150px;
-            height: 150px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             margin: auto;
           }

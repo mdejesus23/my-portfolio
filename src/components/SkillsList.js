@@ -17,7 +17,7 @@ const Skills = () => {
         }}
       >
         <Card>
-          <p>{skill.tech}</p>
+          <h2>{skill.tech}</h2>
           <img src={skill.image} alt={skill.altText} />
         </Card>
       </motion.li>
