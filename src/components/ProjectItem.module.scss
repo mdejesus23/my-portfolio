@@ -3,61 +3,69 @@
 @media (min-width: 1200px) {
   .container {
     margin: auto;
+    // height: 500px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
     h1 {
       margin-top: 2rem;
     }
 
     p {
       font-size: 1rem;
-      max-width: 80%;
+      max-width: 90%;
       text-align: justify;
-      margin: 1rem auto 2rem auto;
+      margin: 0.5rem auto;
     }
 
     .flex {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 2rem;
-      width: 80%;
+      column-gap: 1.5rem;
+      width: 70%;
       margin: 2rem auto;
 
       .card {
         background-color: $primary-color;
+        padding: 0.7rem;
+        height: 400px;
 
         .projectContainer {
           height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
           h2 {
-            margin-bottom: 0;
-            background-color: $primary-color;
             color: white;
-            padding: 0.6rem 0;
+            margin-bottom: 0;
+            padding: 0.5rem 0;
           }
 
           .imageContainer {
             width: 100%;
-            border-bottom: 2px solid $primary-color;
 
             img {
-              height: 200px;
+              width: 200px;
+              height: 170px;
               object-fit: contain;
             }
           }
 
           .descContainer {
-            border: 2px solid $secondary-color;
-            width: 70%;
-            height: 180px;
-            border-radius: 10px;
-            margin: 5px auto;
-            display: flex;
-            align-items: center;
-            padding: 5px;
+            width: 100%;
+            height: 100px;
+            margin: auto;
             overflow-y: auto;
 
-            p {
+            .descText {
               color: white;
-              margin: 20px 5px;
-              text-align: center;
+              font-size: 0.9rem;
+              margin: 5px auto;
+              text-align: justify;
+              width: 100%;
             }
           }
 
@@ -87,54 +95,58 @@
 
     p {
       font-size: 1rem;
-      max-width: 80%;
+      max-width: 90%;
       text-align: justify;
-      margin: 1rem auto 2rem auto;
+      margin: 0.5rem auto;
     }
 
     .flex {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 2rem;
+      column-gap: 1.5rem;
       width: 90%;
       margin: 2rem auto;
 
       .card {
         background-color: $primary-color;
+        padding: 0.7rem;
+        height: 400px;
+
         .projectContainer {
           height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
           h2 {
-            margin-bottom: 0;
-            background-color: $primary-color;
             color: white;
+            margin-bottom: 0;
             padding: 0.6rem 0;
           }
 
           .imageContainer {
             width: 100%;
-            border-bottom: 2px solid $primary-color;
 
             img {
               height: 200px;
+              height: 170px;
               object-fit: contain;
             }
           }
 
           .descContainer {
-            border: 2px solid $secondary-color;
-            width: 95%;
-            height: 180px;
-            border-radius: 10px;
-            margin: 5px auto;
-            display: flex;
-            align-items: center;
-            padding: 5px;
-
+            width: 100%;
+            height: 100px;
+            margin: auto;
             overflow-y: auto;
 
-            p {
+            .descText {
               color: white;
-              text-align: center;
+              font-size: 0.9rem;
+              margin: 5px auto;
+              text-align: justify;
+              width: 100%;
             }
           }
 
@@ -142,7 +154,7 @@
             margin: 1rem auto;
             display: flex;
             justify-content: space-between;
-            width: 60%;
+            width: 70%;
 
             a {
               color: $secondary-color;
@@ -164,51 +176,55 @@
       font-size: 1rem;
       max-width: 90%;
       text-align: justify;
-      margin: 1rem auto 2rem auto;
+      margin: 0.5rem auto;
     }
 
     .flex {
       display: grid;
       grid-template-columns: 1fr;
       row-gap: 3rem;
-      width: 40%;
+      width: 50%;
       margin: 2rem auto;
 
       .card {
         background-color: $primary-color;
+        padding: 0.7rem;
+        height: 400px;
+
         .projectContainer {
           height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
           h2 {
-            margin-bottom: 0;
-            background-color: $primary-color;
             color: white;
+            margin-bottom: 0;
             padding: 0.6rem 0;
           }
 
           .imageContainer {
             width: 100%;
-            border-bottom: 2px solid $primary-color;
 
             img {
               width: 100%;
-              // height: 300px;
               object-fit: contain;
             }
           }
 
           .descContainer {
-            border: 2px solid $secondary-color;
-            width: 80%;
-            height: 180px;
-            border-radius: 10px;
-            margin: 5px auto;
-            display: flex;
-            align-items: center;
+            width: 100%;
+            height: 100px;
+            margin: auto;
             overflow-y: auto;
 
-            p {
+            .descText {
               color: white;
+              font-size: 0.9rem;
+              margin: 5px auto;
               text-align: justify;
+              width: 100%;
             }
           }
 
@@ -238,16 +254,70 @@
       font-size: 1rem;
       max-width: 90%;
       text-align: justify;
-      margin: 1rem auto 2rem auto;
+      margin: 0.5rem auto;
     }
 
     .flex {
       display: grid;
       grid-template-columns: 1fr;
-      row-gap: 2rem;
+      row-gap: 3rem;
       width: 70%;
-      // height: 1300px;
       margin: 2rem auto;
+
+      .card {
+        background-color: $primary-color;
+        padding: 0.7rem;
+        height: 350px;
+
+        .projectContainer {
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          h2 {
+            color: white;
+            margin-bottom: 0;
+            padding: 0.6rem 0;
+          }
+
+          .imageContainer {
+            width: 100%;
+
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .descContainer {
+            width: 100%;
+            height: 70px;
+            margin: auto;
+            overflow-y: auto;
+
+            .descText {
+              color: white;
+              font-size: 0.9rem;
+              margin: 5px auto;
+              text-align: justify;
+              width: 100%;
+            }
+          }
+
+          .control {
+            margin: 1rem auto;
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+
+            a {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
     }
   }
 }

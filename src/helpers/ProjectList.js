@@ -8,8 +8,7 @@ const Projects = [
     name: "Ecommerce",
     imgSrc: ecommerce,
     link: "https://mdejesus23.github.io/ecommerce-sample/index.html",
-    description: `
-Introducing my latest web development project: an eCommerce website built using HTML, CSS, and JavaScript. This dynamic website allows users to browse and shop for various items, with the ability to add items to the cart and delete them.`,
+    description: `This is a sample eCommerce website! Explore, add to cart, and manage your items effortlessly with the power of HTML, Sass, and JavaScript. Enjoy a seamless shopping experience with real-time data fetching and dynamic rendering.`,
     sourceCode: "https://github.com/mdejesus23/ecommerce-sample",
   },
   {
@@ -26,9 +25,7 @@ Introducing my latest web development project: an eCommerce website built using 
     name: "Tech Documentation",
     imgSrc: technicalDoc,
     link: "https://mdejesus23.github.io/technical-doc/",
-    description: `Introducing my web development project: a tech documentation single page website providing useful examples and documentation for HTML and CSS. This project is designed to help users familiarize themselves with these technologies and improve their coding skills.
-    Explore this repository to gain a deeper understanding of HTML and CSS, and apply the examples to your own projects
-    `,
+    description: `This is HTML and CSS technical documentation! This comprehensive resource is a conversion of our handy cheat sheet PDF into a user-friendly website. Access it on any device and explore quick references for tags, elements, selectors, and styling techniques. Boost your coding productivity and build stunning web pages with ease.`,
     sourceCode: "https://github.com/mdejesus23/technical-doc",
   },
 ];
