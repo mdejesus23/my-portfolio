@@ -10,7 +10,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const About = () => {
   const [text] = useTypewriter({
-    words: ["Developer", "Hardware-tech", "Freelancer", "Comedian", "=) Joke!"],
+    words: ["Developer", "Hardware-tech", "Freelancer"],
     loop: {},
     typeSpeed: 200,
     delaySpeed: 500,
