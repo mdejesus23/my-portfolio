@@ -3,11 +3,19 @@ import profilePic2 from "../assets/melnard.jpg";
 import Button from "./UI/Button/Button";
 
 import { motion } from "framer-motion";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const About = () => {
+  const [text] = useTypewriter({
+    words: ["Developer", "Hardware-tech", "Freelancer", "Comedian", "=) Joke!"],
+    loop: {},
+    typeSpeed: 200,
+    delaySpeed: 500,
+  });
+
   return (
     <div className={classes.home}>
       <motion.div
@@ -20,6 +28,12 @@ const About = () => {
           <h2>
             Hi, My Name is <span>Melnard</span>
           </h2>
+          <h3>
+            I'm a <span className={classes.typewriter}>{text}</span>
+            <span>
+              <Cursor cursorStyle="|" />
+            </span>
+          </h3>
           <div className={classes.prompt}>
             <p>
               A junior front-end developer with an insatiable thirst for

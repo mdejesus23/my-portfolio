@@ -48,6 +48,7 @@
   "devDependencies": {
     "framer-motion": "^10.12.12",
     "gh-pages": "^5.0.0",
-    "node-sass": "^7.0.3"
+    "node-sass": "^7.0.3",
+    "react-simple-typewriter": "^5.0.1"
   }
 }
