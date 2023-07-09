@@ -2,6 +2,7 @@ import tributePage from "../assets/proj-tribute.jpg";
 import technicalDoc from "../assets/proj-tech-doc.jpg";
 import ecommerce from "../assets/proj-ecommerce.jpg";
 import foodApp from "../assets/proj-food-app.jpg";
+import forestLake from "../assets/forest-lake-project.jpg";
 
 const Projects = [
   {
@@ -22,6 +23,14 @@ const Projects = [
   },
   {
     id: "p3",
+    name: "Real State Website",
+    imgSrc: forestLake,
+    link: "https://forest-lake.melnerdz.com/",
+    description: `This is a Real State website. A static website which is build with React and Sass. It focused to my front end skills using React.js. It has a lot of features like Image slider, google map integration, functioning contact form with client side validation.`,
+    sourceCode: "https://github.com/mdejesus23/forest-lake-app",
+  },
+  {
+    id: "p4",
     name: "Tech Documentation",
     imgSrc: technicalDoc,
     link: "https://documentation.melnerdz.com",
@@ -29,7 +38,7 @@ const Projects = [
     sourceCode: "https://github.com/mdejesus23/technical-doc",
   },
   {
-    id: "p4",
+    id: "p5",
     name: "Tribute Page",
     imgSrc: tributePage,
     link: "https://tribute.melnerdz.com",
