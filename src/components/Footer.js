@@ -32,7 +32,7 @@ const Footer = () => {
           <TwitterIcon />
         </a>
       </div>
-      <p>&copy; Copyright {currentYear}</p>
+      <p>&copy; Copyright {currentYear} melnerdz.com </p>
     </footer>
   );
 };
