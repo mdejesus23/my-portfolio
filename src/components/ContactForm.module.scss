@@ -1,9 +1,30 @@
 @import "../styles/UI";
 
+.heading {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  background-color: $primary-color;
+
+  h1 {
+    color: $secondary-color;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+}
+
 .contact {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
+  margin-bottom: 0;
+  padding: 1rem;
   background-color: $primary-color;
 
   h1 {
@@ -21,7 +42,7 @@
 
   form {
     .InputContainer {
-      width: 40%;
+      width: 90%;
       border-radius: 4px;
       margin: 2rem auto;
       padding: 1rem;
@@ -107,6 +128,17 @@
         display: flex;
         justify-content: flex-end;
 
+        button {
+          background-color: $secondary-color;
+          font-weight: 700;
+          border: 2px solid $secondary-color;
+          color: white;
+          padding: 10px 20px;
+          width: 100%;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+
         button:disabled,
         button:disabled:hover,
         button:disabled:active {
@@ -122,10 +154,12 @@
 
 @media (max-width: 899px) {
   .contact {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    // height: calc(100vh - 100px);
+    background-color: $primary-color;
+    margin-bottom: 0;
+    padding: 1rem;
 
     p {
       max-width: 80%;
@@ -157,7 +191,8 @@
     color: $secondary-color;
 
     h1 {
-      margin: 0;
+      font-size: 2rem;
+      margin: 1rem auto;
     }
 
     p {
