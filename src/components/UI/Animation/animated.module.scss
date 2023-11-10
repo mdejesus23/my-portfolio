@@ -1,0 +1,41 @@
+.animatedIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .techIcon {
+    max-width: 5rem;
+    animation: bounce-icon 2s infinite ease-in-out;
+    img {
+      width: 100%;
+    }
+  }
+
+  .techIcon:nth-child(2n) {
+    animation: bounce-icon2 2s infinite ease-in-out;
+  }
+}
+
+@keyframes bounce-icon {
+  0% {
+    transform: translateY(-7px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes bounce-icon2 {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

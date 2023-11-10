@@ -1,342 +1,137 @@
 @import "../styles/UI";
 
-@media (min-width: 1200.1px) {
-  .home {
-    background-color: $primary-color;
-    height: calc(100vh - 100px);
+.home {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(89, 89, 117, 0.4),
+      rgba(27, 27, 50, 0.4)
+    ),
+    url(../assets/laptop.jpg);
+  // background-color: $primary-color;
+  background-size: cover;
+  background-position: center;
+  // height: calc(100vh - 60px);
+  max-height: 100%;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
 
-    .grid {
-      width: 70%;
-      margin: 0 auto;
-      height: calc(100vh - 100px);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-color: $primary-color;
-      color: white;
-      padding: 15px;
+  .grid {
+    width: 90%;
+    margin: 0 auto;
+    // row-gap: 2rem;
 
-      .gridItem1 {
-        h2 {
-          font-size: 2.5rem;
-          margin-bottom: 17px;
-        }
-
-        h3 {
-          margin-bottom: 1rem;
-          font-size: 2rem;
-
-          .typewriter {
-            color: $secondary-color;
-            font-size: 2rem;
-          }
-        }
-
-        span {
-          color: $secondary-color;
-        }
-
-        .prompt {
-          p {
-            font-size: 1.2rem;
-            margin-bottom: 25px;
-          }
-
-          .icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            a {
-              svg {
-                font-size: 3rem;
-                margin: 0 8px;
-                transition: color 0.3s;
-                cursor: pointer;
-
-                &:hover {
-                  color: $secondary-color;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .gridItem2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .clip {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 20rem;
-          width: 25rem;
-          background-color: $secondary-color;
-          clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-
-          img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: auto;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .home {
-    background-color: $primary-color;
-    height: calc(100vh - 100px);
-
-    .grid {
-      width: 70%;
-      margin: 0 auto;
-      height: calc(100vh - 100px);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-color: $primary-color;
-      color: white;
-      padding: 15px;
-
-      .gridItem1 {
-        h2 {
-          font-size: 2rem;
-          margin-bottom: 15px;
-        }
-
-        h3 {
-          margin-bottom: 1rem;
-          font-size: 2rem;
-
-          .typewriter {
-            color: $secondary-color;
-            font-size: 2rem;
-          }
-        }
-
-        span {
-          color: $secondary-color;
-        }
-
-        .prompt {
-          p {
-            font-size: 1.2rem;
-            margin-bottom: 55px;
-          }
-
-          .icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            a {
-              svg {
-                font-size: 3rem;
-                margin: 0 8px;
-                transition: color 0.3s;
-                cursor: pointer;
-
-                &:hover {
-                  color: $secondary-color;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .gridItem2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .clip {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 17rem;
-          width: 21rem;
-          background-color: $secondary-color;
-          clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-
-          img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            margin: auto;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 899px) {
-  .home {
-    height: calc(100vh - 100px);
-
-    .grid {
-      width: 80%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-color: $primary-color;
-      color: white;
-      padding: 15px;
-
-      .gridItem1 {
-        h2 {
-          font-size: 2rem;
-        }
-        span {
-          color: $secondary-color;
-        }
-
-        .prompt {
-          p {
-            font-size: 1.2rem;
-            margin-bottom: 25px;
-          }
-
-          .icons {
-            display: flex;
-            justify-content: center;
-
-            a {
-              svg {
-                font-size: 2.8rem;
-                margin: 0 8px;
-                cursor: pointer;
-                transition: color 0.3s;
-
-                &:hover {
-                  color: $secondary-color;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .gridItem2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .clip {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 15rem;
-          width: 18rem;
-          background-color: $secondary-color;
-          clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
-
-          img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            margin: auto;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 580px) {
-  .home {
-    background-color: $primary-color;
     height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(235, 234, 234);
 
-    .grid {
-      width: 90%;
-      height: 100%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      row-gap: 3rem;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-color: $primary-color;
-      color: white;
-      padding: 1rem 0 7rem 0;
+    .gridItem1 {
+      padding: 1.5rem;
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 17px;
+      }
 
-      .gridItem1 {
-        h2 {
-          font-size: 2.9rem;
-          margin-bottom: 20px;
-        }
-        span {
+      h3 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+
+        .typewriter {
           color: $secondary-color;
+          font-size: 2rem;
+        }
+      }
+
+      span {
+        color: $secondary-color;
+      }
+
+      .prompt {
+        p {
+          max-width: 70rem;
+          font-size: 1.2rem;
+          padding: 0 1rem;
+          margin: 1rem auto;
         }
 
-        .prompt {
-          p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            text-align: justify;
-          }
+        .icons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-          .icons {
-            display: flex;
-            justify-content: center;
+          a {
+            svg {
+              font-size: 3rem;
+              margin: 0 8px;
+              transition: color 0.3s;
+              cursor: pointer;
 
-            a {
-              svg {
-                font-size: 2.8rem;
-                margin: 0 8px;
-                cursor: pointer;
-                transition: color 0.3s;
-
-                &:hover {
-                  color: $secondary-color;
-                  scale: 1.1;
-                }
+              &:hover {
+                color: $secondary-color;
               }
             }
           }
         }
       }
+    }
 
-      .gridItem2 {
+    .gridItem2 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+
+      .clip {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 12rem;
+        width: 12rem;
+        background-color: $secondary-color;
+        clip-path: circle(50% at 50% 50%);
+
+        img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768.1px) {
+  .home {
+    padding: 3rem 0;
+    .grid {
+      .gridItem1 {
+        padding-bottom: 0;
+        .prompt {
+          margin: 4rem auto;
+
+          p {
+            margin: 3rem auto;
+          }
+        }
+      }
+      .gridItem2 {
+        padding-top: 0;
 
         .clip {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 14rem;
-          width: 14rem;
-          background-color: $secondary-color;
-          clip-path: circle(50% at 50% 50%);
-
-          img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: auto;
-          }
+          height: 10rem;
+          width: 10rem;
         }
       }
     }

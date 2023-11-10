@@ -2,7 +2,6 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/Home";
-import SkillsPage from "./pages/Skills";
 import ProjectsPage from "./pages/Project";
 import ContactPage from "./pages/Contact";
 import ErrorPage from "./pages/Error";
@@ -14,7 +13,6 @@ const router = createHashRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "Skills", element: <SkillsPage /> },
       { path: "Projects", element: <ProjectsPage /> },
       { path: "Contact", element: <ContactPage /> },
     ],

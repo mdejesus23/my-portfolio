@@ -38,21 +38,6 @@ const Navigation = (props) => {
           }}
         >
           <NavLink
-            to="Skills"
-            className={({ isActive }) =>
-              isActive ? classes.active : undefined
-            }
-          >
-            Skills
-          </NavLink>
-        </motion.li>
-        <motion.li
-          whileHover={{
-            scale: 1.2,
-            color: "yellow",
-          }}
-        >
-          <NavLink
             to="Projects"
             className={({ isActive }) =>
               isActive ? classes.active : undefined

@@ -5,7 +5,7 @@ import classes from "./Map.module.scss";
 
 const Map = () => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_API_KEY,
+    googleMapsApiKey: process.env.GOOGLE_MAP_API,
   });
 
   if (!isLoaded) return <div>Loading...</div>;

@@ -1,47 +1,61 @@
-import Skill1 from "../assets/icons8-html5.svg";
-import Skill2 from "../assets/icons8-css3.svg";
-import Skill3 from "../assets/icons8-javascript.svg";
-import Skill4 from "../assets/icons8-react.svg";
-import Skill5 from "../assets/icons8-sass.svg";
-import Skill6 from "../assets/icons8-git.svg";
+import HtmlIcon from "../assets/icons8-html5.svg";
+import CssIcon from "../assets/icons8-css3.svg";
+import JsIcon from "../assets/icons8-javascript.svg";
+import ReactIcon from "../assets/icons8-react.svg";
+import SassIcon from "../assets/icons8-sass.svg";
+import GitIcon from "../assets/icons8-git.svg";
+import NodeIcon from "../assets/icons8-node.svg";
+import MongoIcon from "../assets/mongodb-icon.svg";
 
 // dont procastinate or be perfectionist.. it will delay you some time..
 
 const SkillsList = [
   {
+    id: "tech-0.1",
+    tech: "NodeJs",
+    image: NodeIcon,
+    altText: "node icon",
+  },
+  {
+    id: "tech-0.2",
+    tech: "MongoDB",
+    image: MongoIcon,
+    altText: "mongodb icon",
+  },
+  {
     id: "tech-1",
     tech: "Html5",
-    image: Skill1,
+    image: HtmlIcon,
     altText: "html",
   },
   {
     id: "tech-2",
     tech: "Css3",
-    image: Skill2,
+    image: CssIcon,
     altText: "css",
   },
   {
     id: "tech-3",
     tech: "Javascript",
-    image: Skill3,
+    image: JsIcon,
     altText: "javascript",
   },
   {
     id: "tech-4",
     tech: "React.js",
-    image: Skill4,
+    image: ReactIcon,
     altText: "javascript",
   },
   {
     id: "tech-5",
     tech: "Sass",
-    image: Skill5,
+    image: SassIcon,
     altText: "sass",
   },
   {
     id: "tech-6",
     tech: "Git",
-    image: Skill6,
+    image: GitIcon,
     altText: "git",
   },
 ];

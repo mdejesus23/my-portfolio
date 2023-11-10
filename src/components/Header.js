@@ -20,6 +20,7 @@ const Header = () => {
 
   return (
     <header>
+      <h1>MDJ</h1>
       <Navigation toggleNav={showNavLinks} />
       <div className={classes.menuButtonContainer}>
         <button className={classes.menuButton} onClick={menuButtonHandler}>
