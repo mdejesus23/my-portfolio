@@ -40,12 +40,11 @@ const ProjectItem = () => {
     >
       <h1>My Projects</h1>
       <p>
-        Welcome to my portfolio's Project Section! Here, you'll find a
-        collection of responsive websites created using HTML, CSS, JavaScript,
-        and Sass. These simple yet visually appealing websites adapt perfectly
-        to any screen size, ensuring a seamless user experience across all
-        devices. Explore the projects and witness the power of responsive web
-        design in action!
+        Welcome to my Portfolio's Project Section! Explore these responsive
+        websites crafted with HTML, CSS, and JavaScript. Leveraging Node.js,
+        Express.js, MongoDB, AWS S3, and EJS, these projects showcase the
+        seamless fusion of a robust tech stack, ensuring adaptability across all
+        devices. Dive in and witness the power of responsive web design!
       </p>
       <motion.ul
         className={classes.flex}

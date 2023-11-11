@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 0.8rem;
 
   .techIcon {
-    max-width: 5rem;
+    width: 2.5rem;
     animation: bounce-icon 2s infinite ease-in-out;
     img {
       width: 100%;
@@ -18,24 +19,24 @@
 
 @keyframes bounce-icon {
   0% {
-    transform: translateY(-7px);
+    transform: translateY(-5px);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateY(-7px);
+    transform: translateY(-5px);
   }
 }
 
 @keyframes bounce-icon2 {
   0% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
   50% {
-    transform: translateY(-7px);
+    transform: translateY(-5px);
   }
   100% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
 }

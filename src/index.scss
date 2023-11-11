@@ -44,8 +44,25 @@ img {
   width: 100%;
 }
 
+// skill card
 .skill-card {
-  border-radius: 10px;
+  background: $primary-color;
+  padding: 0.5rem;
+  height: 100%;
+  // text-align: center;
+  overflow-y: auto;
+
+  h2 {
+    font-family: "Monoton";
+    color: $secondary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: white;
+    word-spacing: normal;
+    letter-spacing: normal; /* or adjust as needed */
+  }
 }
 
 /* Tablet screen */

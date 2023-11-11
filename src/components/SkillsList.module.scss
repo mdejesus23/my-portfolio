@@ -6,6 +6,15 @@
     color: $primary-color;
     font-size: 2rem;
   }
+
+  li {
+    text-align: center;
+    cursor: pointer;
+
+    &:hover h2 {
+      color: $secondary-color;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -28,6 +37,8 @@
     }
 
     .skillsList {
+      // max-width: 10rem;
+      // padding: 16rem;
       width: 70%;
       margin: 2rem auto;
 

@@ -3,23 +3,29 @@ import Card from "../components/UI/Card/Card";
 
 import { motion } from "framer-motion";
 import classes from "./SkillsList.module.scss";
+import { useState } from "react";
 
 const Skills = () => {
+  const [selectedId, setSelectedId] = useState(null);
+
+  function handleClick(id) {
+    setSelectedId(id !== selectedId ? id : null);
+    console.log(selectedId);
+  }
+
   const mySkillsList = SkillsList.map((skill) => {
     return (
-      <motion.li
-        key={skill.id}
-        whileHover={{
-          scale: 1.1,
-          textShadow: "0px 0px 8px #cccc00",
-          boxShadow: "0px 0px 8px #1b1b32",
-        }}
-      >
-        <Card className="skill-card">
+      <li onClick={() => handleClick(skill.id)} key={skill.id}>
+        <Card className={skill.id === selectedId ? "skill-card" : ""}>
           <h2>{skill.tech}</h2>
-          <img src={skill.image} alt={skill.altText} />
+
+          {skill.id === selectedId ? (
+            <p>{skill.description}</p>
+          ) : (
+            <img src={skill.image} alt={skill.altText} />
+          )}
         </Card>
-      </motion.li>
+      </li>
     );
   });
 
