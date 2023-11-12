@@ -60,8 +60,20 @@ img {
 
   p {
     color: white;
-    word-spacing: normal;
-    letter-spacing: normal; /* or adjust as needed */
+    display: inline;
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+}
+
+.open {
+  background: $primary-color;
+  color: white;
+  border-top: 4px solid $secondary-color;
+
+  h2 {
+    color: $secondary-color;
+    font-family: "Monoton";
   }
 }
 

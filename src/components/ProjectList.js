@@ -4,8 +4,11 @@ import ProjectItem from "./ProjectItem";
 import Button from "../components/UI/Button/Button";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const ProjectList = () => {
+  const [curOpen, setCurOpen] = useState(null);
+
   return (
     <motion.section
       className={classes.container}
@@ -39,6 +42,8 @@ const ProjectList = () => {
           } = proj;
           return (
             <ProjectItem
+              curOpen={curOpen}
+              onOpen={setCurOpen}
               key={id}
               id={id}
               imgSrc={imgSrc}
