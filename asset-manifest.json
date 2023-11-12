@@ -1,12 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.12412c97.css",
-    "main.js": "/static/js/main.c4365bcb.js",
+    "main.css": "/static/css/main.07c7bcc2.css",
+    "main.js": "/static/js/main.d8b145a0.js",
     "static/media/laptop.jpg": "/static/media/laptop.764c542f19e12e322696.jpg",
     "static/media/proj-ecommerce.jpg": "/static/media/proj-ecommerce.9b72e65e392d12de4352.jpg",
     "static/media/proj-tech-doc.jpg": "/static/media/proj-tech-doc.4b77369ea5ef9693c81d.jpg",
-    "static/media/proj-tribute.jpg": "/static/media/proj-tribute.f9c5ab5f9a98ce9bd223.jpg",
-    "static/media/forest-lake-project.jpg": "/static/media/forest-lake-project.3c2a9be565e5361db6f9.jpg",
     "static/media/proj-food-app.jpg": "/static/media/proj-food-app.0cf244620e84b801336b.jpg",
     "static/media/icons8-react.svg": "/static/media/icons8-react.e7574af26628c8d8cc52d64e015eb898.svg",
     "static/media/icons8-sass.svg": "/static/media/icons8-sass.903cef0c9879296f452e2bd0364f58e9.svg",
@@ -17,11 +15,11 @@
     "static/media/icons8-git.svg": "/static/media/icons8-git.43d387b77657117c0e407816cbf72476.svg",
     "static/media/icons8-css3.svg": "/static/media/icons8-css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/icons8-html5.svg": "/static/media/icons8-html5.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.12412c97.css.map": "/static/css/main.12412c97.css.map",
-    "main.c4365bcb.js.map": "/static/js/main.c4365bcb.js.map"
+    "main.07c7bcc2.css.map": "/static/css/main.07c7bcc2.css.map",
+    "main.d8b145a0.js.map": "/static/js/main.d8b145a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.12412c97.css",
-    "static/js/main.c4365bcb.js"
+    "static/css/main.07c7bcc2.css",
+    "static/js/main.d8b145a0.js"
   ]
 }
