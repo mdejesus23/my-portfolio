@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.07c7bcc2.css",
-    "main.js": "/static/js/main.d8b145a0.js",
+    "main.css": "/static/css/main.851be17e.css",
+    "main.js": "/static/js/main.0f470b28.js",
     "static/media/laptop.jpg": "/static/media/laptop.764c542f19e12e322696.jpg",
     "static/media/proj-ecommerce.jpg": "/static/media/proj-ecommerce.9b72e65e392d12de4352.jpg",
     "static/media/proj-tech-doc.jpg": "/static/media/proj-tech-doc.4b77369ea5ef9693c81d.jpg",
     "static/media/proj-food-app.jpg": "/static/media/proj-food-app.0cf244620e84b801336b.jpg",
+    "static/media/prep.jpg": "/static/media/prep.750d546f1908a1caa342.jpg",
     "static/media/icons8-react.svg": "/static/media/icons8-react.e7574af26628c8d8cc52d64e015eb898.svg",
     "static/media/icons8-sass.svg": "/static/media/icons8-sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/icons8-node.svg": "/static/media/icons8-node.43f46a44feba1ce5f2e69bca15d9dfff.svg",
@@ -15,11 +16,11 @@
     "static/media/icons8-git.svg": "/static/media/icons8-git.43d387b77657117c0e407816cbf72476.svg",
     "static/media/icons8-css3.svg": "/static/media/icons8-css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/icons8-html5.svg": "/static/media/icons8-html5.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.07c7bcc2.css.map": "/static/css/main.07c7bcc2.css.map",
-    "main.d8b145a0.js.map": "/static/js/main.d8b145a0.js.map"
+    "main.851be17e.css.map": "/static/css/main.851be17e.css.map",
+    "main.0f470b28.js.map": "/static/js/main.0f470b28.js.map"
   },
   "entrypoints": [
-    "static/css/main.07c7bcc2.css",
-    "static/js/main.d8b145a0.js"
+    "static/css/main.851be17e.css",
+    "static/js/main.0f470b28.js"
   ]
 }
