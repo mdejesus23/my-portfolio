@@ -12,9 +12,9 @@ function ProjectItem({ id, name, techStack, children, curOpen, onOpen }) {
     onOpen(isOpen ? null : id);
   };
 
-  console.log(techStack);
   return (
     <li
+      key={id}
       id={id}
       className={`${classes.projectContainer} ${isOpen ? "open" : ""}`}
       onClick={handleToggle}
@@ -23,17 +23,31 @@ function ProjectItem({ id, name, techStack, children, curOpen, onOpen }) {
       <div className={classes.container}>
         {techStack.map((tech, ind) => {
           return (
-            <div className={classes.techCont}>
+            <div key={ind} className={classes.techCont}>
               <img src={tech.techImg} alt={`${tech.tech} icons`} />
               <p>{tech.tech}</p>
             </div>
           );
         })}
       </div>
-      {!isOpen ? <p>more...</p> : ""}
-      {!isOpen ? <KeyboardArrowDownIcon /> : ""}
+      {!isOpen ? (
+        <>
+          <p>more...</p>
+          <p className={classes.arrow}>{<KeyboardArrowDownIcon />}</p>
+        </>
+      ) : (
+        ""
+      )}
+
       {isOpen ? children : null}
-      {isOpen ? <KeyboardArrowUpIcon /> : ""}
+      {isOpen ? (
+        <>
+          <p>less...</p>
+          <p className={classes.arrow}>{<KeyboardArrowUpIcon />}</p>
+        </>
+      ) : (
+        ""
+      )}
     </li>
   );
 }

@@ -18,11 +18,12 @@ const ProjectList = () => {
     >
       <h1>My Projects</h1>
       <p>
-        Welcome to my Portfolio's Project Section! Explore these responsive
-        websites crafted with HTML, CSS, and JavaScript. Leveraging Node.js,
-        Express.js, MongoDB, AWS S3, and EJS, these projects showcase the
-        seamless fusion of a robust tech stack, ensuring adaptability across all
-        devices. Dive in and witness the power of responsive web design!
+        Welcome to my portfolio's project showcase! Explore a curated list of
+        projects I've built from scratch, featuring a robust tech stack: HTML,
+        CSS, JavaScript, Node.js, Express.js, MongoDB, EJS, and React.js. One
+        highlight is the recently deployed <em>Preparation App</em>, currently
+        utilized in our church organization. Witness the power of responsive web
+        design and the seamless fusion of technology in this full-stack project!
       </p>
       <motion.ul
         className={classes.flex}
