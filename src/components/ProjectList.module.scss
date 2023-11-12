@@ -1,0 +1,39 @@
+@import "../styles/UI";
+
+.container {
+  margin: 2rem auto;
+
+  h1 {
+    font-family: "Monoton";
+  }
+
+  p {
+    margin: 1rem auto;
+  }
+
+  .flex {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .projectDetails {
+      .imageContainer {
+        width: 30rem;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768.1px) {
+  .container {
+    max-width: 60%;
+  }
+}
