@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6587bbc.css",
-    "main.js": "/static/js/main.3e13e841.js",
+    "main.css": "/static/css/main.81dbc776.css",
+    "main.js": "/static/js/main.33ebff25.js",
     "static/media/laptop.jpg": "/static/media/laptop.764c542f19e12e322696.jpg",
+    "static/media/contact-photo.jpg": "/static/media/contact-photo.8748094737881aa063c2.jpg",
     "static/media/project-photo3.jpg": "/static/media/project-photo3.bdbc2b99200c7242d092.jpg",
     "static/media/proj-ecommerce.jpg": "/static/media/proj-ecommerce.9b72e65e392d12de4352.jpg",
     "static/media/proj-tech-doc.jpg": "/static/media/proj-tech-doc.4b77369ea5ef9693c81d.jpg",
@@ -17,11 +18,11 @@
     "static/media/icons8-git.svg": "/static/media/icons8-git.43d387b77657117c0e407816cbf72476.svg",
     "static/media/icons8-css3.svg": "/static/media/icons8-css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/icons8-html5.svg": "/static/media/icons8-html5.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.a6587bbc.css.map": "/static/css/main.a6587bbc.css.map",
-    "main.3e13e841.js.map": "/static/js/main.3e13e841.js.map"
+    "main.81dbc776.css.map": "/static/css/main.81dbc776.css.map",
+    "main.33ebff25.js.map": "/static/js/main.33ebff25.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6587bbc.css",
-    "static/js/main.3e13e841.js"
+    "static/css/main.81dbc776.css",
+    "static/js/main.33ebff25.js"
   ]
 }
