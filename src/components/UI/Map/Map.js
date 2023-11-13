@@ -12,7 +12,7 @@ const Map = () => {
   return (
     <div>
       <div className={classes["address-container"]}>
-        <p>1964 - C Ana Sarmiento Street Malate, Manila</p>
+        <p>Malate, Manila</p>
       </div>
       <Gmap />
     </div>

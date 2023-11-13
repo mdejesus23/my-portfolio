@@ -9,6 +9,13 @@ header {
   background-color: $primary-color;
   padding: 0 1.5rem;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 99;
+
   h1 {
     font-family: "Monoton";
     font-size: 2rem;
