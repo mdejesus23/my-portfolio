@@ -12,7 +12,7 @@ import classes from "./ContactForm.module.scss";
 const isNotEmpty = (value) => value.trim() !== "";
 const isEmail = (value) => value.includes("@");
 
-const ContactForm = (props) => {
+const ContactForm = () => {
   const form = useRef();
   // const [sendIsValid, setSendIsValid] = useState(true);
 
@@ -110,9 +110,10 @@ const ContactForm = (props) => {
       <div className={classes.heading}>
         <h1>Contact Me</h1>
         <p>
-          Contact me for inquiries and job interview invitations. Let's discuss
-          how my skills in HTML, CSS, JavaScript, React.js, SASS, Bootstrap, and
-          Git can contribute to your project. Drop me a message now!
+          Feel free to reach out for inquiries or job interview invitations. I'm
+          eager to discuss how my skills as a developer can make a meaningful
+          contribution to your project. Don't hesitate to drop me a message—I
+          look forward to connecting with you!📧
         </p>
       </div>
       <motion.div

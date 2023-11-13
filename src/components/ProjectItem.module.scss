@@ -28,6 +28,12 @@
       }
     }
   }
+
+  .imageContainer {
+    img {
+      width: 20rem;
+    }
+  }
 }
 
 @media (max-width: 768px) {

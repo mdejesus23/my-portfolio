@@ -5,7 +5,15 @@ import classes from "./ProjectItem.module.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-function ProjectItem({ id, name, techStack, children, curOpen, onOpen }) {
+const ProjectItem = ({
+  id,
+  name,
+  techStack,
+  children,
+  curOpen,
+  onOpen,
+  imgSrc,
+}) => {
   const isOpen = id === curOpen;
 
   const handleToggle = () => {
@@ -30,6 +38,9 @@ function ProjectItem({ id, name, techStack, children, curOpen, onOpen }) {
           );
         })}
       </div>
+      <div className={classes.imageContainer}>
+        <img src={imgSrc} alt={name} />
+      </div>
       {!isOpen ? (
         <>
           <p>more...</p>
@@ -50,6 +61,6 @@ function ProjectItem({ id, name, techStack, children, curOpen, onOpen }) {
       )}
     </li>
   );
-}
+};
 
 export default ProjectItem;
