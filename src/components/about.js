@@ -2,7 +2,7 @@ import classes from "./about.module.scss";
 import profilePic2 from "../assets/profile-pic.jpg";
 import Button from "./UI/Button/Button";
 import Skills from "./SkillsList";
-import AnimatedIcon from "./UI/Animation/AnimatedIcon";
+// import AnimatedIcon from "./UI/Animation/AnimatedIcon";
 
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -73,7 +73,7 @@ const About = () => {
             </div>
           </div>
           <div className={classes.gridItem2}>
-            <AnimatedIcon />
+            {/* <AnimatedIcon /> */}
             <div className={classes.clip}>
               <img src={profilePic2} alt="profile" />
             </div>

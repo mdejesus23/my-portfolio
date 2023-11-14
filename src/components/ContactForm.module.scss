@@ -41,8 +41,7 @@
 
   form {
     .InputContainer {
-      border: 1px solid $primary-color;
-      background-color: $primary-color;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
       width: 90%;
       max-width: 36rem;
       border-radius: 4px;
