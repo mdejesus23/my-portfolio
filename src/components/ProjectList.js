@@ -39,6 +39,7 @@ const ProjectList = () => {
               name,
               description: desc,
               techStack,
+              videoDemo,
             } = proj;
             return (
               <ProjectItem
@@ -52,11 +53,12 @@ const ProjectList = () => {
                 name={name}
                 desc={desc}
                 techStack={techStack}
+                videoDemo={videoDemo}
               >
                 <div className={classes.projectDetails}>
                   {/* <div className={classes.imageContainer}>
                   <img src={imgSrc} alt={name} />
-                </div> */}
+                  </div> */}
                   <div className={classes.descContainer}>
                     <p className={classes.descText}>{desc}</p>
                   </div>
@@ -65,8 +67,13 @@ const ProjectList = () => {
                       <Button>Code</Button>
                     </a>
                     <a href={link} target="_blank" rel="noreferrer">
-                      <Button>Demo</Button>
+                      <Button>Live</Button>
                     </a>
+                    {videoDemo ? (
+                      <a href={videoDemo} target="_blank" rel="noreferrer">
+                        <Button>Demo</Button>
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </ProjectItem>

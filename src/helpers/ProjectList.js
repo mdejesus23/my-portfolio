@@ -30,6 +30,7 @@ const Projects = [
       { id: "css101", tech: "CSS", techImg: CssIcon },
       { id: "h101", tech: "HTML", techImg: HtmlIcon },
     ],
+    videoDemo: "https://www.loom.com/share/fb2b47a123b74d02b8b4e04d53876952",
   },
   {
     id: "p1",
@@ -43,6 +44,7 @@ const Projects = [
       { id: "s1", tech: "SASS", techImg: SassIcon },
       { id: "h1", tech: "HTML", techImg: HtmlIcon },
     ],
+    videoDemo: "",
   },
   {
     id: "p2",
@@ -56,6 +58,7 @@ const Projects = [
       { id: "s2", tech: "SASS", techImg: SassIcon },
       { id: "h2", tech: "HTML", techImg: HtmlIcon },
     ],
+    videoDemo: "",
   },
   {
     id: "p4",
@@ -69,6 +72,7 @@ const Projects = [
       { id: "css1", tech: "CSS", techImg: CssIcon },
       { id: "h3", tech: "HTML", techImg: HtmlIcon },
     ],
+    videoDemo: "",
   },
 ];
 
