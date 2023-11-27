@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+
 import Navigation from "./Navigation";
 import classes from "./Header.module.scss";
 
@@ -24,7 +26,7 @@ const Header = () => {
       <Navigation toggleNav={showNavLinks} />
       <div className={classes.menuButtonContainer}>
         <button className={classes.menuButton} onClick={menuButtonHandler}>
-          <MenuOutlinedIcon />
+          {showNavLinks ? <CloseIcon /> : <MenuIcon />}
         </button>
       </div>
     </header>
