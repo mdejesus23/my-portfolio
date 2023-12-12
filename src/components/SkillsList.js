@@ -1,7 +1,6 @@
 import SkillsList from "../helpers/SkillsList";
 import Card from "../components/UI/Card/Card";
 
-import { motion } from "framer-motion";
 import classes from "./SkillsList.module.scss";
 import { useState } from "react";
 
@@ -30,22 +29,22 @@ const Skills = () => {
   });
 
   return (
-    <motion.div
+    <div
       className={classes.skillContainer}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.3 }}
     >
       <h1>Tech Stack</h1>
-      <motion.div
+      <div
         className={classes.skillsList}
         initial={{ y: -800 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.1, type: "spring", stiffness: 60 }}
       >
         <ul>{mySkillsList}</ul>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

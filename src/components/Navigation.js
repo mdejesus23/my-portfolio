@@ -8,7 +8,7 @@ const Navigation = (props) => {
   const toggleClass = props.toggleNav ? classes.show : classes.hide;
 
   return (
-    <motion.nav
+    <nav
       className={toggleClass}
       initial={{ y: -500 }}
       animate={{ y: 0 }}
@@ -17,7 +17,6 @@ const Navigation = (props) => {
       <ul className={classes.links}>
         <motion.li
           whileHover={{
-            scale: 1.2,
             color: "yellow",
           }}
         >
@@ -33,7 +32,6 @@ const Navigation = (props) => {
         </motion.li>
         <motion.li
           whileHover={{
-            scale: 1.2,
             color: "yellow",
           }}
         >
@@ -48,7 +46,6 @@ const Navigation = (props) => {
         </motion.li>
         <motion.li
           whileHover={{
-            scale: 1.2,
             color: "yellow",
           }}
         >
@@ -62,7 +59,7 @@ const Navigation = (props) => {
           </NavLink>
         </motion.li>
       </ul>
-    </motion.nav>
+    </nav>
   );
 };
 
