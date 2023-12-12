@@ -45,6 +45,30 @@ img {
   width: 100%;
 }
 
+/* Target all input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  color: $secondary-color; /* Change the text color */
+}
+
+/* Target placeholder text for all input fields */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: $secondary-color; /* Change the text color */
+}
+
+/* Target text color of textarea */
+textarea {
+  color: $secondary-color; /* Change the text color */
+}
+
+/* Target placeholder text color for textarea */
+textarea::placeholder {
+  color: $secondary-color; /* Change the text color */
+}
+
 // skill card
 .skill-card {
   background: $primary-color;

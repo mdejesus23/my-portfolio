@@ -4,7 +4,6 @@ import Button from "./UI/Button/Button";
 import Skills from "./SkillsList";
 // import AnimatedIcon from "./UI/Animation/AnimatedIcon";
 
-import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -21,12 +20,7 @@ const About = () => {
   return (
     <>
       <div className={classes.home}>
-        <motion.div
-          className={classes.grid}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
+        <div className={classes.grid}>
           <div className={classes.gridItem1}>
             <h2>
               Hi, My Name is <span>Melnard</span>
@@ -78,7 +72,7 @@ const About = () => {
               <img src={profilePic2} alt="profile" />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
       <div>
         <Skills />

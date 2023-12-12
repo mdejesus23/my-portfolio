@@ -1,15 +1,9 @@
 import classes from "./Footer.module.scss";
 
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-
-const currentYear = new Date().getFullYear();
-
 const Footer = () => {
   return (
     <footer className={classes.footer}>
-      <div className={classes.socialMedia}>
+      {/* <div className={classes.socialMedia}>
         <a
           href="https://www.facebook.com/dejesusmelnard"
           target="_blank"
@@ -31,8 +25,8 @@ const Footer = () => {
         >
           <TwitterIcon />
         </a>
-      </div>
-      <p>&copy; Copyright {currentYear} melnerdz.com </p>
+      </div> */}
+      <p>&copy; Copyright {new Date().getFullYear()} melnerdz.com </p>
     </footer>
   );
 };

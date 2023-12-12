@@ -1,12 +1,8 @@
 import { useRef } from "react";
+
 import emailjs from "@emailjs/browser";
 
-import Map from "../components/UI/Map/Map";
-
 import useUserInput from "../hooks/use-userInput";
-import { motion } from "framer-motion";
-
-// import Button from "../components/UI/Button/Button";
 import classes from "./ContactForm.module.scss";
 
 const isNotEmpty = (value) => value.trim() !== "";
@@ -14,7 +10,6 @@ const isEmail = (value) => value.includes("@");
 
 const ContactForm = () => {
   const form = useRef();
-  // const [sendIsValid, setSendIsValid] = useState(true);
 
   const {
     value: enteredName,
@@ -74,11 +69,11 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          // console.log(result.text);
+          console.log(result.text);
           alert("Message successfully sent");
         },
         (error) => {
-          // console.log(error.text);
+          console.log(error.text);
           alert("Failed to send the message, please try again");
         }
       );
@@ -92,16 +87,16 @@ const ContactForm = () => {
   // toggle className to add invalid to indicate to the user using some styles that
   // the input value is invalid.
   const nameClasses = nameInputHasError
-    ? classes.nameInput + " " + classes.invalid
-    : classes.nameInput;
+    ? classes.row + " " + classes.invalid
+    : classes.row;
 
   const emailClasses = emailInputHasError
-    ? classes.emailInput + " " + classes.invalid
-    : classes.emailInput;
+    ? classes.row + " " + classes.invalid
+    : classes.row;
 
   const subjectClasses = subjectInputHasError
-    ? classes.subjMessageInput + " " + classes.invalid
-    : classes.subjMessageInput;
+    ? classes.row + " " + classes.invalid
+    : classes.row;
 
   const messageClassname = messageInputHasError ? classes.messageInvalid : "";
 
@@ -115,44 +110,29 @@ const ContactForm = () => {
           contribution to your project. Don't hesitate to drop me a message—I
           look forward to connecting with you!📧
         </p>
-      </div>
-      <motion.div
-        className={classes.contact}
-        // initial={{ opacity: 0 }}
-        // animate={{ opacity: 1 }}
-        // transition={{ delay: 0.3 }}
-      >
-        <motion.form
-          ref={form}
-          onSubmit={formSubmitHandler}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          <div className={classes.InputContainer}>
-            <div className={classes.controlForm}>
-              <div className={nameClasses}>
-                <input
-                  name="user_name"
-                  id="name"
-                  type="text"
-                  placeholder="Name"
-                  onChange={nameChangeHandler}
-                  onBlur={nameBlurHandler}
-                  value={enteredName}
-                />
-              </div>
-              <div className={emailClasses}>
-                <input
-                  id="email"
-                  type="email"
-                  name="user_email"
-                  placeholder="Email"
-                  onChange={emailChangeHandler}
-                  onBlur={emailBlurHandler}
-                  value={enteredEmail}
-                />
-              </div>
+        <div className={classes.contact}>
+          <form ref={form} onSubmit={formSubmitHandler}>
+            <div className={nameClasses}>
+              <input
+                name="user_name"
+                id="name"
+                type="text"
+                placeholder="Name"
+                onChange={nameChangeHandler}
+                onBlur={nameBlurHandler}
+                value={enteredName}
+              />
+            </div>
+            <div className={emailClasses}>
+              <input
+                id="email"
+                type="email"
+                name="user_email"
+                placeholder="Email"
+                onChange={emailChangeHandler}
+                onBlur={emailBlurHandler}
+                value={enteredEmail}
+              />
             </div>
             <div className={subjectClasses}>
               <input
@@ -163,6 +143,8 @@ const ContactForm = () => {
                 onBlur={subjectBlurHandler}
                 value={enteredSubject}
               />
+            </div>
+            <div className={classes.row}>
               <textarea
                 className={messageClassname}
                 name="message"
@@ -172,22 +154,13 @@ const ContactForm = () => {
                 value={enteredMessage}
               />
             </div>
+
             <div className={classes.formControl}>
-              <motion.button
-                disabled={!formIsValid}
-                whileHover={{
-                  scale: 1.1,
-                  textShadow: "0px 0px 8px #cccc00",
-                  boxShadow: "0px 0px 8px #cccc00",
-                }}
-              >
-                Send
-              </motion.button>
+              <button disabled={!formIsValid}>Send</button>
             </div>
-          </div>
-        </motion.form>
-        <Map />
-      </motion.div>
+          </form>
+        </div>
+      </div>
     </>
   );
 };

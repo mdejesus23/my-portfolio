@@ -20,7 +20,7 @@ const Projects = [
     imgSrc: prepApp,
     link: "https://preparation-app.onrender.com/",
     description: `
-    I have developed a comprehensive preparation app for our church organization. This full-stack web application is built using Node.js, with Express serving as the backend framework, MongoDB for data storage, EJS templates for rendering HTML documents in response to client requests, and CSS for styling. Key functionalities include user signup and login features, where I've incorporated Express-session to store session data in the database and utilize sessionId in the browser's cookie. Additionally, I've implemented Content Security Policy (CSP) using the Node Helmet package and included CSRF protection to enhance the overall security of the website, and many more..`,
+    I have developed a comprehensive preparation app for our church organization. This full-stack web application is built using Node.js, with Express serving as the backend framework, MongoDB for data storage, EJS templates for rendering HTML documents in response to client requests, and CSS for styling. Key functionalities include user signup and login features, where I've incorporated Express-session to store session data in the database and utilize sessionId in the browser's cookie. Additionally, I've implemented Content Security Policy (CSP) using the Node Helmet package and included CSRF protection to enhance the overall security of the website, and many more.. You can watch the video for demo or login using this account.. test123@gmail.com | pass: Test123 | theme passcode: asdf`,
     sourceCode: "https://github.com/mdejesus23/preparation-app",
     techStack: [
       { id: "n1", tech: "NodeJs", techImg: NodeIcon },
@@ -30,7 +30,8 @@ const Projects = [
       { id: "css101", tech: "CSS", techImg: CssIcon },
       { id: "h101", tech: "HTML", techImg: HtmlIcon },
     ],
-    videoDemo: "https://www.loom.com/share/fb2b47a123b74d02b8b4e04d53876952",
+    videoDemo:
+      "https://www.loom.com/share/24b8f9eb7d6f4a0f893e6293056aad2b?sid=3cb414ce-367d-4c39-9e6c-d02360e9ecb1",
   },
   {
     id: "p1",
