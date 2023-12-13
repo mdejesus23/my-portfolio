@@ -10,13 +10,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const About = () => {
-  // const [text] = useTypewriter({
-  //   words: ["Developer 💻", "Hardware-tech ⚙", "Freelancer"],
-  //   loop: {},
-  //   typeSpeed: 200,
-  //   delaySpeed: 500,
-  // });
-
   return (
     <>
       <div className={classes.home}>
@@ -25,12 +18,7 @@ const About = () => {
             <h2>
               Hi, My Name is <span>Melnard</span>
             </h2>
-            {/* <h3>
-              I'm a <span className={classes.typewriter}>{text}</span>
-              <span>
-                <Cursor cursorStyle="|" />
-              </span>
-            </h3> */}
+
             <div className={classes.prompt}>
               <p>
                 A junior Full Stack Web Developer with a passion for creating

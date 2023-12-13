@@ -24,11 +24,12 @@
   }
 
   p {
-    max-width: 70rem;
-    font-size: 1.4rem;
-    padding: 0 1rem;
-    margin: 1rem auto;
     color: rgb(235, 234, 234);
+    max-width: 80%;
+    font-size: 1.4rem;
+    margin: auto;
+    text-align: justify;
+    overflow-wrap: break-word;
   }
 
   .contact {
