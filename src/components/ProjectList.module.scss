@@ -69,6 +69,11 @@
 }
 
 @media (max-width: 768px) {
+  .heading {
+    p {
+      max-width: 90%;
+    }
+  }
   .container {
     max-width: 90%;
 

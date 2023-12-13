@@ -124,10 +124,16 @@
 }
 
 @media (max-width: 768px) {
-  .contact {
-    form {
-      max-width: 40rem;
-      width: 90%;
+  .heading {
+    p {
+      max-width: 90%;
+    }
+
+    .contact {
+      form {
+        max-width: 40rem;
+        width: 90%;
+      }
     }
   }
 }
