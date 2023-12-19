@@ -11,14 +11,12 @@
 }
 
 html {
-  font-size: 16px;
-  line-height: 1.4;
-
   // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   font-family: Tahoma;
+  background-color: rgb(238, 238, 246);
 }
 
 main {
@@ -70,27 +68,27 @@ textarea::placeholder {
 }
 
 // skill card
-.skill-card {
-  background: $primary-color;
-  padding: 0.5rem;
-  height: 100%;
-  // text-align: center;
-  overflow-y: auto;
+// .skill-card {
+//   background: $primary-color;
+//   padding: 0.5rem;
+//   height: 100%;
+//   // text-align: center;
+//   overflow-y: auto;
 
-  h2 {
-    font-family: "Monoton";
-    color: $secondary-color;
-    margin-bottom: 0.5rem;
-  }
+//   h2 {
+//     font-family: "Monoton";
+//     color: $secondary-color;
+//     margin-bottom: 0.5rem;
+//   }
 
-  p {
-    font-size: 1.2rem;
-    color: white;
-    display: inline;
-    overflow-wrap: break-word;
-    text-align: left;
-  }
-}
+//   p {
+//     font-size: 1.2rem;
+//     color: white;
+//     display: inline;
+//     overflow-wrap: break-word;
+//     text-align: left;
+//   }
+// }
 
 .open {
   background: $primary-color;
@@ -103,16 +101,23 @@ textarea::placeholder {
   }
 }
 
+/* pc screen */
+@media (min-width: 899.1px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 /* Tablet screen */
 @media (max-width: 899px) {
   html {
-    font-size: 14px;
+    font-size: 50%;
   }
 }
 
 /* Mobile screen */
 @media (max-width: 580px) {
   html {
-    font-size: 12px;
+    font-size: 45%;
   }
 }
