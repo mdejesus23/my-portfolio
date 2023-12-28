@@ -9,8 +9,7 @@
     url(../assets/contact-photo.jpg);
   background-size: cover;
   background-position: center;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 4rem 1rem;
 
   display: flex;
@@ -19,7 +18,7 @@
   align-items: center;
   row-gap: 3rem;
 
-  max-width: 1400px;
+  // max-width: 1400px;
   margin: 0 auto;
 
   h1 {
@@ -129,13 +128,21 @@
 
 @media (max-width: 768px) {
   .heading {
+    row-gap: 1rem;
+    padding: 0;
+    padding-top: 1rem;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
     p {
       max-width: 90%;
     }
 
     .contact {
       form {
-        max-width: 40rem;
+        max-width: 60rem;
         width: 90%;
       }
     }
