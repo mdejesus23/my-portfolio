@@ -12,6 +12,7 @@
 
 html {
   // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 65%;
 }
 
 body {
@@ -101,8 +102,8 @@ textarea::placeholder {
   }
 }
 
-/* pc screen */
-@media (min-width: 899.1px) {
+/* pc normal screen */
+@media (max-width: 1400px) {
   html {
     font-size: 62.5%;
   }
