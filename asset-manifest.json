@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.5584b5af.css",
-    "main.js": "/static/js/main.650ebb40.js",
-    "static/media/laptop.jpg": "/static/media/laptop.764c542f19e12e322696.jpg",
-    "static/media/contact-photo.jpg": "/static/media/contact-photo.8748094737881aa063c2.jpg",
-    "static/media/project-photo3.jpg": "/static/media/project-photo3.bdbc2b99200c7242d092.jpg",
-    "static/media/proj-ecommerce.jpg": "/static/media/proj-ecommerce.9b72e65e392d12de4352.jpg",
-    "static/media/proj-tech-doc.jpg": "/static/media/proj-tech-doc.4b77369ea5ef9693c81d.jpg",
-    "static/media/proj-food-app.jpg": "/static/media/proj-food-app.0cf244620e84b801336b.jpg",
-    "static/media/prep.jpg": "/static/media/prep.750d546f1908a1caa342.jpg",
-    "static/media/icons8-react.svg": "/static/media/icons8-react.e7574af26628c8d8cc52d64e015eb898.svg",
-    "static/media/icons8-sass.svg": "/static/media/icons8-sass.903cef0c9879296f452e2bd0364f58e9.svg",
-    "static/media/icons8-node.svg": "/static/media/icons8-node.43f46a44feba1ce5f2e69bca15d9dfff.svg",
-    "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.0781b723446e1f8a1734f7831a9c3313.svg",
-    "index.html": "/index.html",
-    "static/media/icons8-javascript.svg": "/static/media/icons8-javascript.081325c6f229605dce15142ddd948d6d.svg",
-    "static/media/icons8-git.svg": "/static/media/icons8-git.43d387b77657117c0e407816cbf72476.svg",
-    "static/media/icons8-css3.svg": "/static/media/icons8-css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
-    "static/media/icons8-html5.svg": "/static/media/icons8-html5.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.5584b5af.css.map": "/static/css/main.5584b5af.css.map",
-    "main.650ebb40.js.map": "/static/js/main.650ebb40.js.map"
+    "main.css": "/my-portfolio/static/css/main.c1311cdd.css",
+    "main.js": "/my-portfolio/static/js/main.6032ecdc.js",
+    "static/media/laptop.jpg": "/my-portfolio/static/media/laptop.764c542f19e12e322696.jpg",
+    "static/media/contact-photo.jpg": "/my-portfolio/static/media/contact-photo.8748094737881aa063c2.jpg",
+    "static/media/project-photo3.jpg": "/my-portfolio/static/media/project-photo3.bdbc2b99200c7242d092.jpg",
+    "static/media/proj-ecommerce.jpg": "/my-portfolio/static/media/proj-ecommerce.9b72e65e392d12de4352.jpg",
+    "static/media/proj-tech-doc.jpg": "/my-portfolio/static/media/proj-tech-doc.4b77369ea5ef9693c81d.jpg",
+    "static/media/proj-food-app.jpg": "/my-portfolio/static/media/proj-food-app.0cf244620e84b801336b.jpg",
+    "static/media/prep.jpg": "/my-portfolio/static/media/prep.750d546f1908a1caa342.jpg",
+    "static/media/icons8-react.svg": "/my-portfolio/static/media/icons8-react.e7574af26628c8d8cc52d64e015eb898.svg",
+    "static/media/icons8-sass.svg": "/my-portfolio/static/media/icons8-sass.903cef0c9879296f452e2bd0364f58e9.svg",
+    "static/media/icons8-node.svg": "/my-portfolio/static/media/icons8-node.43f46a44feba1ce5f2e69bca15d9dfff.svg",
+    "static/media/mongodb-icon.svg": "/my-portfolio/static/media/mongodb-icon.0781b723446e1f8a1734f7831a9c3313.svg",
+    "index.html": "/my-portfolio/index.html",
+    "static/media/icons8-javascript.svg": "/my-portfolio/static/media/icons8-javascript.081325c6f229605dce15142ddd948d6d.svg",
+    "static/media/icons8-git.svg": "/my-portfolio/static/media/icons8-git.43d387b77657117c0e407816cbf72476.svg",
+    "static/media/icons8-css3.svg": "/my-portfolio/static/media/icons8-css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "static/media/icons8-html5.svg": "/my-portfolio/static/media/icons8-html5.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "main.c1311cdd.css.map": "/my-portfolio/static/css/main.c1311cdd.css.map",
+    "main.6032ecdc.js.map": "/my-portfolio/static/js/main.6032ecdc.js.map"
   },
   "entrypoints": [
-    "static/css/main.5584b5af.css",
-    "static/js/main.650ebb40.js"
+    "static/css/main.c1311cdd.css",
+    "static/js/main.6032ecdc.js"
   ]
 }
